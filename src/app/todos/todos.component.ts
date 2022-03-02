@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { ConsoleReporter } from 'jasmine';
 import { TodoServiceService } from './../service/todo-service.service';
 
 @Component({
@@ -11,18 +12,18 @@ jsonData :any[] = [];
 // Pagination parameters.
 p: number = 1;
 count: number = 10;
-jsonDats = [  {
-  "userId": 1,
-  "id": 1,
-  "title": "delectus aut autem",
-  "completed": false
-},
-{
-  "userId": 1,
-  "id": 2,
-  "title": "quis ut nam facilis et officia qui",
-  "completed": false
-}]
+// jsonDats = [  {
+//   "userId": 1,
+//   "id": 1,
+//   "title": "delectus aut autem",
+//   "completed": false
+// },
+// {
+//   "userId": 1,
+//   "id": 2,
+//   "title": "quis ut nam facilis et officia qui",
+//   "completed": false
+// }]
 
   constructor(public todoService:TodoServiceService) {
   
@@ -32,9 +33,14 @@ jsonDats = [  {
     this.todoService.getTodos().subscribe(data=>
     { 
       this.jsonData = data;
-      if (this.jsonData.length > 0) console.log(this.jsonData);  
+      // if (this.jsonData.length > 0) console.log(this.jsonData);  
     
     });
-  }
 
+  }
+  seeDetail(id:number) {
+    // e.preventDefault();
+    console.log('Helo',id);
+    // this.router.navigate(['/'])
+  }
 }

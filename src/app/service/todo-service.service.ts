@@ -15,9 +15,11 @@ export class TodoServiceService {
     return this.http.get<any>('https://jsonplaceholder.typicode.com/todos');  
   }
   
-  getTodo(id:number) {
-    return fetch('https://jsonplaceholder.typicode.com/todos/'+`${id}`)
-    .then(response => response.json())
-    .then(json => console.log(json))  
+  getTodo(id:any) : Observable<any> {
+    // return fetch('https://jsonplaceholder.typicode.com/todos/'+`${id}`)
+    // .then(response => response.json())
+    // .then(json => console.log(json))  
+    console.log('https://jsonplaceholder.typicode.com/todos/'+`${id}`);
+    return this.http.get<any>('https://jsonplaceholder.typicode.com/todos/'+`${id}`); 
   }
 }

@@ -7,7 +7,7 @@ const routes: Routes = [{
   path:'todos', component: TodosComponent
 },
 {
-  path:'todo/:id', component: TodoComponent
+  path:'todos/:id', component: TodoComponent
 },
 {
   path:'',component : TodosComponent

@@ -3,7 +3,7 @@
         <li *ngFor="let item of jsonData  | paginate: { itemsPerPage: count, currentPage: p }">
             <div ngif="item.id > 0">
                 <input type="checkbox">
-                {{item.title}}
+                <a [routerLink]="['/todos',item.id]">{{item.title}}</a> 
             </div>
         </li>
         <pagination-controls (pageChange)="p = $event"></pagination-controls>
