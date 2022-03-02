@@ -1,0 +1,11 @@
+<div class="todos-container">
+    <ul>
+        <li *ngFor="let item of jsonData  | paginate: { itemsPerPage: count, currentPage: p }">
+            <div ngif="item.id > 0">
+                <input type="checkbox">
+                {{item.title}}
+            </div>
+        </li>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </ul>
+</div>
