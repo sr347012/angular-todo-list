@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TodoServiceService } from './service/todo-service.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     // JwPaginationComponent,
-    TodoComponent
+    TodoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

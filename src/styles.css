@@ -3,6 +3,17 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Cambria", Cochin, 'Georgia', Times, 'Times New Roman', serif;
-    background: linear-gradient(to bottom, rgb(0,0,0,0.11), rgb(0,0,0,0.33));
+    /* font-family: "Cambria", Cochin, 'Georgia', Times, 'Times New Roman', serif; */
+    /* background: linear-gradient(to bottom, rgb(0,0,0,0.11), rgb(0,0,0,0.33)); */
+}
+
+
+:root {
+    --bgcolor: #242B3E;
+    --bgwhite: rgb(255,255,255,0.5);
+    --bgcolor-light: #454A5A;
+    --dashboard01: #E9E5DD;
+    --dashboard02: #EDBB58;
+    --dashboard03: #DB6F4D;
+    --dashboard04: #533CA5;
 }
