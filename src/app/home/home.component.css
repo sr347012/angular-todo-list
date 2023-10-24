@@ -75,6 +75,10 @@ figcaption {
     text-transform: capitalize;
     
 }
+.home-main-caption button:hover {
+    background-color: var(--bgcolor);
+    color: var(--dashboard01);
+}
 
 
 /*  ------------------------- */

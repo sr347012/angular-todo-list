@@ -95,7 +95,7 @@
             </div>
               
             <div class="home-say-desc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
+                Ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
             </div>
         </div>
         <div *ngIf="showcard02" class="home-say-card-02">
@@ -105,7 +105,7 @@
                 </figcaption>
             </div>
             <div class="home-say-desc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
+                Dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
             </div>
         </div>
         <div *ngIf="showcard03" class="home-say-card-03">
@@ -114,7 +114,7 @@
                 </figcaption>
             </div>
             <div class="home-say-desc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
+                LorAm ipsum dolor, sit amAet consecteturA adipisicing elit. PeArferendis minus oAmnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
             </div>
         </div>
         <div *ngIf="showcard04" class="home-say-card-04">
@@ -124,7 +124,7 @@
                 </figcaption>
             </div>
             <div class="home-say-desc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
+                Definitely Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus omnis aliquam reprehenderit? Minima maxime numquam aliquid quos fugit expedita ipsum aperiam possimus odio repudiandae, quam sit maiores fuga enim.
             </div>
         </div>
 
@@ -132,10 +132,10 @@
     </div>
 
     <div class="home-say-buttons">
-        <button (click)="btn01()"></button>
-        <button (click)="btn02()"></button>
-        <button (click)="btn03()"></button>
-        <button (click)="btn04()"></button>
+        <button [ngStyle]="{'background-color': this.showcard01? 'var(--dashboard01)' : 'var(--bgcolor)' }" (click)="btn01()"></button>
+        <button [ngStyle]="{'background-color': this.showcard02? 'var(--dashboard01)' : 'var(--bgcolor)' }" (click)="btn02()"></button>
+        <button [ngStyle]="{'background-color': this.showcard03? 'var(--dashboard01)' : 'var(--bgcolor)' }" (click)="btn03()"></button>
+        <button [ngStyle]="{'background-color': this.showcard04? 'var(--dashboard01)' : 'var(--bgcolor)' }" (click)="btn04()"></button>
     </div>
     
     <!-- Footer Container -->
