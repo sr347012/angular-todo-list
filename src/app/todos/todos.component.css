@@ -1,14 +1,90 @@
-li {
+body {
+    background-color: var(--dashboard01);
+}
+li, a {
     list-style: none;
+    text-decoration: none;
     margin: 10px;
     padding: 5px;
+    color: var(--bgcolor);
 }
 
-.todos-container {
-    margin: 10px;
-    padding: 5px;
-    /* background-color: aqua; */
+.dashboard-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.dashboard-container>div {
+    background-color: var(--dashboard01);
+    margin: 1%;
+    padding: 2%;
+    color: var(--bgcolor);
+    border: 2px solid var(--bgcolor);
+    border-radius: 10px;
+}
+.todos-container {
+
+
+}
+
+.todos-header {
+    background-color: var(--bgcolor);
+    color: var(--dashboard01);
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icons-left {
+    margin-right: 20%;
+
+}
+.header-icons-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 40%;
+
+}
+
+.header-icons-left svg {
+    height: 30px;
+    width: 50px;
+    margin: 5%;
+    padding: 5%;
+    cursor: pointer;
+    /* width: 50vw; */
+}
+.header-icons-right svg {
+    height: 30px;
+    width: 50px;
+    margin: 5%;
+    padding: 5%;
+    cursor: pointer;
+    /* width: 50vw; */
+}
+.todos-nav {
+    position: fixed;
+    background-color: var(--bgcolor);
+    color: var(--dashboard01);
+    height: 100vh;
+    /* margin: 2%; */
+    padding: 2%;
+}
+
+.todos-nav h1 {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.todos-nav h1:first-child {
+    background-color: var(--bgcolor-light);
+    border-radius: 5px;
+    padding: 3px;
+}
+

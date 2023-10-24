@@ -11,7 +11,7 @@ export class TodosComponent implements OnInit {
 jsonData :any[] = [];
 // Pagination parameters.
 p: number = 1;
-count: number = 10;
+count: number = 5;
 // jsonDats = [  {
 //   "userId": 1,
 //   "id": 1,
